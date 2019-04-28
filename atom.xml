@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>東雲</title>
+  
+  <subtitle>一只咸鱼</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.betaloli.design/"/>
+  <updated>2019-03-27T11:10:44.000Z</updated>
+  <id>https://blog.betaloli.design/</id>
+  
+  <author>
+    <name>東雲</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Onedrive搭建个人网盘</title>
+    <link href="./2019/03/onedrive/"/>
+    <id>./2019/03/onedrive/</id>
+    <published>2019-03-25T16:04:34.000Z</published>
+    <updated>2019-03-27T11:10:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在开始搭建之前你需要一个5T的账号&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下面是注册用的邮箱&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://od.obagg.com/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Onedirve" scheme="./tags/Onedirve/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Valine评论启用邮件通知</title>
+    <link href="./2019/03/valinemail/"/>
+    <id>./2019/03/valinemail/</id>
+    <published>2019-03-25T02:22:27.000Z</published>
+    <updated>2019-03-27T11:10:44.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;部署&quot;&gt;&lt;a href=&quot;#部署&quot; class=&quot;headerlink&quot; title=&quot;部署&quot;&gt;&lt;/a&gt;部署&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;在Leancloud云引擎设置界面，填写代码库并保存：&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Hexo" scheme="./tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>腾讯云Coding使用笔记</title>
+    <link href="./2019/03/codingnote/"/>
+    <id>./2019/03/codingnote/</id>
+    <published>2019-03-24T17:09:30.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Github已经弃用，原因速度太慢&lt;br&gt;使用腾讯云Coding作为博客&lt;br&gt;使用笔记&lt;br&gt;deploy:&lt;br&gt;  type: git&lt;br&gt;  repo: &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="笔记" scheme="./categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Coding" scheme="./tags/Coding/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生日快乐！！</title>
+    <link href="./2019/03/hpbd/"/>
+    <id>./2019/03/hpbd/</id>
+    <published>2019-03-24T10:58:56.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/03/24/5c9762621adf9.jpg&quot; alt=&quot;hpd&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;祝贺弥生五岁了&quot;&gt;&lt;a href=&quot;#祝贺弥生五岁了&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="笔记" scheme="./categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="笔记" scheme="./tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>picAPI</title>
+    <link href="./2019/03/picapi/"/>
+    <id>./2019/03/picapi/</id>
+    <published>2019-03-21T23:50:01.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;简易图片API&lt;br&gt;只有两个7K原文件，直接上传就可以访问了&lt;br&gt;每天自动收录30+&lt;br&gt;程序自带600+图片&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+//读取文本
+$str = explode(&amp;quot;\n&amp;quot;,
+        
+      
+    
+    </summary>
+    
+      <category term="源码" scheme="./categories/%E6%BA%90%E7%A0%81/"/>
+    
+    
+      <category term="websource" scheme="./tags/websource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好新博客</title>
+    <link href="./2019/03/hello-new-blog/"/>
+    <id>./2019/03/hello-new-blog/</id>
+    <published>2019-03-21T11:53:38.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;你好新博客&quot;&gt;&lt;a href=&quot;#你好新博客&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="笔记" scheme="./categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Centos简易安装pip3</title>
+    <link href="./2019/03/pip3/"/>
+    <id>./2019/03/pip3/</id>
+    <published>2019-03-21T11:48:11.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;1.安装 epel-release扩展yum源&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yum install -y epel-release
+yum clean all
+yum
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="python" scheme="./tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Natfrp跳过网站备案</title>
+    <link href="./2019/03/natfrp/"/>
+    <id>./2019/03/natfrp/</id>
+    <published>2019-03-21T11:41:04.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在教程开始之前先了解一下什么是frp&lt;br&gt;Frp就是内网穿透 这个很容易理解&lt;br&gt;那么我也不多说，需要深入了解的同学可以百度了解一下&lt;/p&gt;
+&lt;h3 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Natfrp" scheme="./tags/Natfrp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx Apche 开启HSTS</title>
+    <link href="./2019/03/openhsts/"/>
+    <id>./2019/03/openhsts/</id>
+    <published>2019-03-21T11:38:25.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在你的网站中启用HSTS&lt;/p&gt;
+&lt;h3 id=&quot;Nginx&quot;&gt;&lt;a href=&quot;#Nginx&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="ssl" scheme="./tags/ssl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux重置Mysql密码</title>
+    <link href="./2019/03/resetmysqlpasswd/"/>
+    <id>./2019/03/resetmysqlpasswd/</id>
+    <published>2019-03-21T11:34:10.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;编辑配置文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vim /etc/mysql/mysql.conf.d/mysqld.cnf
+
+2.在配置文件[mysqld]添加字段
+skip-grant-tables
+3.重启mysql
+service mysql
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="mysql" scheme="./tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux安装SSR小飞机</title>
+    <link href="./2019/03/linux-install-ssr/"/>
+    <id>./2019/03/linux-install-ssr/</id>
+    <published>2019-03-21T11:31:12.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/cn2t/doubi-SSR&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="SSR" scheme="./tags/SSR/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>宝塔开启Tls1.3</title>
+    <link href="./2019/03/apply-tls1-3/"/>
+    <id>./2019/03/apply-tls1-3/</id>
+    <published>2019-03-21T11:25:06.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://moec-1251970542.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2019/03/450cc5500bf84a6c99ddc073245feb4c.png&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="ssl" scheme="./tags/ssl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7简易安装Mymyql</title>
+    <link href="./2019/03/mysql/"/>
+    <id>./2019/03/mysql/</id>
+    <published>2019-03-21T11:16:24.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://moec-1251970542.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2019/03/timg.jpg&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Mysql" scheme="./tags/Mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux编译安装Nodejs</title>
+    <link href="./2019/03/install-nodejs/"/>
+    <id>./2019/03/install-nodejs/</id>
+    <published>2019-03-21T10:58:40.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://moec-1251970542.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2019/03/timg-1-750x459.jpg&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="nodejs" scheme="./tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>npm安装n管理器切换版本</title>
+    <link href="./2019/03/install-n/"/>
+    <id>./2019/03/install-n/</id>
+    <published>2019-03-21T10:49:55.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;什么是NVM&quot;&gt;&lt;a href=&quot;#什么是NVM&quot; class=&quot;headerlink&quot; title=&quot;什么是NVM&quot;&gt;&lt;/a&gt;什么是NVM&lt;/h3&gt;&lt;p&gt;nvm全称Node Version Manager是 Nodejs 版本管理器，它让我们能方便的对
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="nodejs" scheme="./tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>宝塔安装SSpanelv3</title>
+    <link href="./2019/03/sspanel/"/>
+    <id>./2019/03/sspanel/</id>
+    <published>2019-03-21T10:41:15.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;安装面板程序&quot;&gt;&lt;a href=&quot;#安装面板程序&quot; class=&quot;headerlink&quot; title=&quot;安装面板程序&quot;&gt;&lt;/a&gt;安装面板程序&lt;/h3&gt;&lt;p&gt;配置PHP（宝塔用户）&lt;/p&gt;
+&lt;p&gt;宝塔用户可能会在超过某一数量节点的时候出现Undefined
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="sspanel" scheme="./tags/sspanel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Github page安装Hexo博客</title>
+    <link href="./2019/03/github-page/"/>
+    <id>./2019/03/github-page/</id>
+    <published>2019-03-21T08:57:40.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;创建Github仓库&quot;&gt;&lt;a href=&quot;#创建Github仓库&quot; class=&quot;headerlink&quot; title=&quot;创建Github仓库&quot;&gt;&lt;/a&gt;创建Github仓库&lt;/h2&gt;&lt;p&gt;这个不用说，自己百度。创建之后点击Setting 设置 仓库名字填写你的
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="./categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Hexo" scheme="./tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这是第一篇博文</title>
+    <link href="./2019/03/hexo/"/>
+    <id>./2019/03/hexo/</id>
+    <published>2019-03-20T14:06:29.000Z</published>
+    <updated>2019-03-27T11:10:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;本Hexo博客已经基本完成，剩下只需要再进行小修改即可&lt;br&gt;这只是个预备的博客，如果我的主站(&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="笔记" scheme="./categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+</feed>

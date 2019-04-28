@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Onedrive搭建个人网盘</title>
+      <link href="/2019/03/onedrive/"/>
+      <url>/2019/03/onedrive/</url>
+      
+        <content type="html"><![CDATA[<p>在开始搭建之前你需要一个5T的账号</p><p><strong>下面是注册用的邮箱</strong></p><ul><li><a href="http://od.obagg.com/" target="_blank" rel="noopener">http://od.obagg.com/</a></li><li><a href="http://mail.hrka.net/" target="_blank" rel="noopener">http://mail.hrka.net/</a></li><li><a href="http://abcda.tech/" target="_blank" rel="noopener">http://abcda.tech/</a></li></ul><p>右上角是你的临时邮箱<br><img src="https://i.loli.net/2019/03/26/5c98fef44a3f1.png" alt="mail"></p><p>选择一个版本注册吧</p><p>学生版：<a href="https://signup.microsoft.com/signup?sku=student" target="_blank" rel="noopener">https://signup.microsoft.com/signup?sku=student</a><br>教师版：<a href="https://signup.microsoft.com/signup?sku=faculty" target="_blank" rel="noopener">https://signup.microsoft.com/signup?sku=faculty</a></p><p>注册完成之后你会得到一个带5T空间的网盘</p><h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>你需要一个虚拟空间来显示你存放的文件以及下载预览<br>在<a href="https://github.com/donwa/oneindex/blob/master/README.md" target="_blank" rel="noopener">Github项目地址</a>下载最新程序，上传源码到你的空间，并且输入你绑定的域名开始安装</p><ol><li>PHP空间，PHP 5.6+ 需打开curl支持</li><li>OneDrive 账号 (个人、企业版或教育版/工作或学校帐帐户)</li><li>OneIndex 程序<br><img src="https://raw.githubusercontent.com/donwa/oneindex/files/images/install.gif" alt="设置"></li></ol><p>注意，如果你安装完成，并上传一个文件之后没有显示，请到后台清理缓存</p><h3 id="Windows便携上传文件"><a href="#Windows便携上传文件" class="headerlink" title="Windows便携上传文件"></a>Windows便携上传文件</h3><p>打开网站下载程序<br>网页地址：<a href="https://www.raidrive.com/" target="_blank" rel="noopener">https://www.raidrive.com/</a><br>蓝奏云盘：<a href="http://t.cn/EZKRDHl" target="_blank" rel="noopener">http://t.cn/EZKRDHl</a><br>完成安装之后打开程序，点击右上角add添加网盘<br><img src="https://cdn.betaloli.com/img/git/20181103135052423.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2dpdGh1Yl8zOTUzMzQxNA==,size_16,color_FFFFFF,t_70" alt="设置"><br>登录你的网盘账号，在计算机分区列表管理即可</p><h4 id="可选-推荐配置，非必需。后台定时刷新缓存，可增加前台访问的速度。"><a href="#可选-推荐配置，非必需。后台定时刷新缓存，可增加前台访问的速度。" class="headerlink" title="[可选]推荐配置，非必需。后台定时刷新缓存，可增加前台访问的速度。"></a>[可选]推荐配置，非必需。后台定时刷新缓存，可增加前台访问的速度。</h4><pre><code># 每小时刷新一次token0 * * * * /具体路径/php /程序具体路径/one.php token:refresh# 每十分钟后台刷新一遍缓存*/10 * * * * /具体路径/php /程序具体路径/one.php cache:refresh</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Onedirve </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Valine评论启用邮件通知</title>
+      <link href="/2019/03/valinemail/"/>
+      <url>/2019/03/valinemail/</url>
+      
+        <content type="html"><![CDATA[<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><ol><li>在Leancloud云引擎设置界面，填写代码库并保存：<a href="https://github.com/DesertsP/Valine-Admin.git" target="_blank" rel="noopener">https://github.com/DesertsP/Valine-Admin.git</a></li><li><img src="https://camo.githubusercontent.com/5c09894cee4643d60c7158f040faa88cd95d2dba/68747470733a2f2f636c6f75642e70616e6a756e77656e2e636f6d2f323031382f30392f70696e672d6d752d6b7561692d7a68616f2d323031382d30392d31352d7869612d77752d31322d35362d30342e706e67" alt="设置"></li><li>在设置页面，设置环境变量以及 Web 二级域名。<br><img src="https://camo.githubusercontent.com/dd5ad7ca9c5a3c49d54e60549317cd767c32bf4f/68747470733a2f2f636c6f75642e70616e6a756e77656e2e636f6d2f323031382f30392f70696e672d6d752d6b7561692d7a68616f2d323031382d30392d31352d7869612d77752d332d34302d34382e706e67" alt="y"></li></ol><table><thead><tr><th style="text-align:center">变量</th><th style="text-align:center">参数</th></tr></thead><tbody><tr><td style="text-align:center">SITE_NAME</td><td style="text-align:center">東雲</td></tr><tr><td style="text-align:center">SITE_URL</td><td style="text-align:center"><a href="https://www.betaloli.design">https://www.betaloli.design</a></td></tr><tr><td style="text-align:center">SMTP_SERVICE</td><td style="text-align:center">QQ</td></tr><tr><td style="text-align:center">SMTP_USER</td><td style="text-align:center"><a href="mailto:1292778464@qq.com" target="_blank" rel="noopener">1292778464@qq.com</a></td></tr><tr><td style="text-align:center">SMTP_PASS</td><td style="text-align:center">xxxxxxxxxx</td></tr><tr><td style="text-align:center">SENDER_NAME</td><td style="text-align:center">東雲</td></tr><tr><td style="text-align:center">SENDER_EMAIL</td><td style="text-align:center"><a href="mailto:1292778464@qq.com" target="_blank" rel="noopener">1292778464@qq.com</a></td></tr><tr><td style="text-align:center">ADMIN_URL</td><td style="text-align:center">你设置的web二级域名</td></tr><tr><td style="text-align:center">BLOGGER_EMA</td><td style="text-align:center"><a href="mailto:xxx@gmail.com" target="_blank" rel="noopener">xxx@gmail.com</a></td></tr><tr><td style="text-align:center">AKISMET_KE</td><td style="text-align:center">xxxxxxxx</td></tr></tbody></table><p>以上必填参数请务必正确设置。</p><p>二级域名用于评论后台管理，如<a href="https://qiansh.leanapp.cn" target="_blank" rel="noopener">https://qiansh.leanapp.cn</a> 。<br><img src="https://camo.githubusercontent.com/8d7d065177e8081788701e0b14fdea5012f38457/68747470733a2f2f636c6f75642e70616e6a756e77656e2e636f6d2f323031382f30392f70696e672d6d752d6b7561692d7a68616f2d323031382d30392d31352d7869612d77752d312d30362d34312e706e67" alt="web"></p><ol start="3"><li><p>切换到部署标签页，分支使用master，点击部署即可<br><img src="https://camo.githubusercontent.com/fa5f1d143d0e7657f75e8653627fb76c712fcb72/68747470733a2f2f636c6f75642e70616e6a756e77656e2e636f6d2f323031382f30392f70696e672d6d752d6b7561692d7a68616f2d323031382d30392d31352d7869612d77752d31322d35362d35302e706e67" alt="ghh"><br>完成部署，等</p></li><li><p>评论管理<br>评论管理。访问设置的二级域名https://二级域名.leanapp.cn/sign-up，注册管理员登录信息，如：qiansh.leanapp.cn/sign-up<br><img src="https://camo.githubusercontent.com/fa5b5bd64567901eec539fcaff6eebc1a985091c/68747470733a2f2f636c6f75642e70616e6a756e77656e2e636f6d2f323031382f31302f70696e672d6d752d6b7561692d7a68616f2d323031382d31302d32322d7869612d77752d392d33352d35312e706e67" alt="admin"><br>在设置那里点击_user 添加行分别填写email password username<br>保存即可访问后台，如果上面注册无法使用的话</p></li><li>定时任务设置<br>目前实现了两种云函数定时任务：(1)自动唤醒，定时访问Web APP二级域名防止云引擎休眠；(2)每天定时检查24小时内漏发的邮件通知。</li></ol><p>进入云引擎-定时任务中，创建定时器，创建两个定时任务。</p><p>选择self-wake云函数，Cron表达式为<strong>0 0/30 7-23 <em> </em> ?</strong>，表示每天早6点到晚23点每隔30分钟访问云引擎，ADMIN_URL环境变量务必设置正确：<br><img src="https://camo.githubusercontent.com/d80e629e92789836a55ba0eae9426aeafcf242ce/68747470733a2f2f636c6f75642e70616e6a756e77656e2e636f6d2f323031382f30392f70696e672d6d752d6b7561692d7a68616f2d323031382d30392d31382d7869612d77752d322d35372d34332e706e67" alt="sjj"><br>选择resend-mails云函数，<strong>Cron表达式为0 0 8 <em> </em> ?</strong>，表示每天早8点检查过去24小时内漏发的通知邮件并补发：<br><img src="https://camo.githubusercontent.com/69d6aae38925401ac36fdac8026aa972d3f43aa2/68747470733a2f2f636c6f75642e70616e6a756e77656e2e636f6d2f323031382f30392f70696e672d6d752d6b7561692d7a68616f2d323031382d30392d31382d7869612d77752d322d35372d35332e706e67" alt="hh"><br>添加定时器后记得点击启动方可生效。</p><h2 id="邮件配置"><a href="#邮件配置" class="headerlink" title="邮件配置"></a>邮件配置</h2><p>邮件通知模板在云引擎环境变量中设定，可自定义通知邮件标题及内容模板。</p><table><thead><tr><th style="text-align:center">变量</th><th style="text-align:center">参数</th></tr></thead><tbody><tr><td style="text-align:center">MAIL_SUBJECT</td><td style="text-align:center">${PARENT_NICK}，您在${SITE_NAME}上的评论收到了回复</td></tr><tr><td style="text-align:center">MAIL_TEMPLATE</td><td style="text-align:center">见下文</td></tr><tr><td style="text-align:center">MAIL_SUBJECT_ADMIN</td><td style="text-align:center">${SITE_NAME}上有新评论了</td></tr><tr><td style="text-align:center">MAIL_TEMPLATE_ADMIN</td><td style="text-align:center">见下文</td></tr></tbody></table><p>邮件通知包含两种，分别是被@通知和博主通知，这两种模板都可以完全自定义。默认使用经典的蓝色风格模板（样式来源未知）。</p><p>默认被@通知邮件内容模板如下：</p><pre><code>&lt;div style=&quot;border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;&quot;&gt;&lt;h2 style=&quot;border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;&quot;&gt;您在&lt;a style=&quot;text-decoration:none;color: #12ADDB;&quot; href=&quot;${SITE_URL}&quot; target=&quot;_blank&quot;&gt;            ${SITE_NAME}&lt;/a&gt;上的评论有了新的回复&lt;/h2&gt; ${PARENT_NICK} 同学，您曾发表评论：&lt;div style=&quot;padding:0 12px 0 12px;margin-top:18px&quot;&gt;&lt;div style=&quot;background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;&quot;&gt;            ${PARENT_COMMENT}&lt;/div&gt;&lt;p&gt;&lt;strong&gt;${NICK}&lt;/strong&gt;回复说：&lt;/p&gt;&lt;div style=&quot;background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;&quot;&gt; ${COMMENT}&lt;/div&gt;&lt;p&gt;您可以点击&lt;a style=&quot;text-decoration:none; color:#12addb&quot; href=&quot;${POST_URL}&quot; target=&quot;_blank&quot;&gt;查看回复的完整內容&lt;/a&gt;，欢迎再次光临&lt;a style=&quot;text-decoration:none; color:#12addb&quot; href=&quot;${SITE_URL}&quot; target=&quot;_blank&quot;&gt;${SITE_NAME}&lt;/a&gt;。&lt;br&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</code></pre><p>效果如下<br><img src="https://camo.githubusercontent.com/5ba0683bee855b2d9eec3c9469295f97e5fd2d1a/68747470733a2f2f636c6f75642e70616e6a756e77656e2e636f6d2f323031382f30392f7765692d6d696e672d6d696e672e706e67" alt="h"><br>@通知模板中的可用变量如下（注，这是邮件模板变量，请勿与云引擎环境变量混淆）：</p><table><thead><tr><th style="text-align:center">变量</th><th style="text-align:center">参数</th></tr></thead><tbody><tr><td style="text-align:center">SITE_NAME</td><td style="text-align:center">名称</td></tr><tr><td style="text-align:center">SITE_URL</td><td style="text-align:center">网址</td></tr><tr><td style="text-align:center">POST_URL</td><td style="text-align:center">文章地址</td></tr><tr><td style="text-align:center">PARENT_NICK</td><td style="text-align:center">收件人昵称（被@者，父级评论人）</td></tr><tr><td style="text-align:center">PARENT_COMMENT</td><td style="text-align:center">评论</td></tr><tr><td style="text-align:center">NICK</td><td style="text-align:center">评论者昵称</td></tr><tr><td style="text-align:center">COMMENT</td><td style="text-align:center">评论内容</td></tr></tbody></table><p>默认博主通知邮件内容模板如下：</p><pre><code>&lt;div style=&quot;border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;&quot;&gt;&lt;h2 style=&quot;border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;&quot;&gt;您在&lt;a style=&quot;text-decoration:none;color: #12ADDB;&quot; href=&quot;${SITE_URL}&quot; target=&quot;_blank&quot;&gt;${SITE_NAME}&lt;/a&gt;上的文章有了新的评论&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;${NICK}&lt;/strong&gt;回复说：&lt;/p&gt;&lt;div style=&quot;background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;&quot;&gt; ${COMMENT}&lt;/div&gt;&lt;p&gt;您可以点击&lt;a style=&quot;text-decoration:none; color:#12addb&quot; href=&quot;${POST_URL}&quot; target=&quot;_blank&quot;&gt;查看回复的完整內容&lt;/a&gt;&lt;br&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</code></pre><p>博主通知邮件模板中的可用变量与@通知中的基本一致，PARENT_NICK 和 PARENT_COMMENT 变量不再可用。</p><p>这里还提供一个彩虹风格的@通知邮件模板代码：</p><pre><code>&lt;div style=&quot;border-radius: 10px 10px 10px 10px;font-size:13px;    color: #555555;width: 666px;font-family:&#39;Century Gothic&#39;,&#39;Trebuchet MS&#39;,&#39;Hiragino Sans GB&#39;,微软雅黑,&#39;Microsoft Yahei&#39;,Tahoma,Helvetica,Arial,&#39;SimSun&#39;,sans-serif;margin:50px auto;border:1px solid #eee;max-width:100%;background: #ffffff repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);&quot;&gt;&lt;div style=&quot;width:100%;background:#49BDAD;color:#ffffff;border-radius: 10px 10px 0 0;background-image: -moz-linear-gradient(0deg, rgb(67, 198, 184), rgb(255, 209, 244));background-image: -webkit-linear-gradient(0deg, rgb(67, 198, 184), rgb(255, 209, 244));height: 66px;&quot;&gt;&lt;p style=&quot;font-size:15px;word-break:break-all;padding: 23px 32px;margin:0;background-color: hsla(0,0%,100%,.4);border-radius: 10px 10px 0 0;&quot;&gt;您在&lt;a style=&quot;text-decoration:none;color: #ffffff;&quot; href=&quot;${SITE_URL}&quot;&gt; ${SITE_NAME}&lt;/a&gt;上的留言有新回复啦！&lt;/p&gt;&lt;/div&gt;&lt;div style=&quot;margin:40px auto;width:90%&quot;&gt;&lt;p&gt;${PARENT_NICK} 同学，您曾在文章上发表评论：&lt;/p&gt;&lt;div style=&quot;background: #fafafa repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);margin:20px 0px;padding:15px;border-radius:5px;font-size:14px;color:#555555;&quot;&gt;${PARENT_COMMENT}&lt;/div&gt;&lt;p&gt;${NICK} 给您的回复如下：&lt;/p&gt;&lt;div style=&quot;background: #fafafa repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);margin:20px 0px;padding:15px;border-radius:5px;font-size:14px;color:#555555;&quot;&gt;${COMMENT}&lt;/div&gt;&lt;p&gt;您可以点击&lt;a style=&quot;text-decoration:none; color:#12addb&quot; href=&quot;${POST_URL}#comments&quot;&gt;查看回复的完整內容&lt;/a&gt;，欢迎再次光临&lt;a style=&quot;text-decoration:none; color:#12addb&quot;                href=&quot;${SITE_URL}&quot;&gt; ${SITE_NAME}&lt;/a&gt;。&lt;/p&gt;&lt;style type=&quot;text/css&quot;&gt;a:link{text-decoration:none}a:visited{text-decoration:none}a:hover{text-decoration:none}a:active{text-decoration:none}&lt;/style&gt;&lt;/div&gt;&lt;/div&gt;</code></pre><p>效果如下<br><img src="https://camo.githubusercontent.com/0f532e0c731e4a9db7452f384dc8b78e56fb62b5/68747470733a2f2f636c6f75642e70616e6a756e77656e2e636f6d2f323031382f30392f70696e672d6d752d6b7561692d7a68616f2d323031382d30392d31352d7869612d77752d352d31372d32312e706e67" alt="h"></p><p>更多查看<br><a href="https://github.com/DesertsP/Valine-Admin/blob/master/README.md" target="_blank" rel="noopener">https://github.com/DesertsP/Valine-Admin/blob/master/README.md</a><br>我已经不想再复制粘贴了<br>咕~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>腾讯云Coding使用笔记</title>
+      <link href="/2019/03/codingnote/"/>
+      <url>/2019/03/codingnote/</url>
+      
+        <content type="html"><![CDATA[<p>Github已经弃用，原因速度太慢<br>使用腾讯云Coding作为博客<br>使用笔记<br>deploy:<br>  type: git<br>  repo: <a href="https://git.dev.tencent.com/Qianshi/Qianshi.git" target="_blank" rel="noopener">https://git.dev.tencent.com/Qianshi/Qianshi.git</a><br>  branch: master<br>  以上需要输入账号密码<br>使用git@<br>  需要验证ssh连接<br>  ssh -T <a href="mailto:git@git.coding.NET" target="_blank" rel="noopener">git@git.coding.NET</a><br> 出现你已通过验证及为成功<br> deploy:<br>  type: git<br>  repo: <a href="mailto:git@git.dev.tencent.com" target="_blank" rel="noopener">git@git.dev.tencent.com</a>:Qianshi/Qianshi.git<br>  branch: master<br>不需要账号密码</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Coding </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>生日快乐！！</title>
+      <link href="/2019/03/hpbd/"/>
+      <url>/2019/03/hpbd/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://i.loli.net/2019/03/24/5c9762621adf9.jpg" alt="hpd"></p><h1 id="祝贺弥生五岁了"><a href="#祝贺弥生五岁了" class="headerlink" title="祝贺弥生五岁了"></a>祝贺弥生五岁了</h1><h1 id="生日快乐！纪念"><a href="#生日快乐！纪念" class="headerlink" title="生日快乐！纪念"></a>生日快乐！纪念</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>picAPI</title>
+      <link href="/2019/03/picapi/"/>
+      <url>/2019/03/picapi/</url>
+      
+        <content type="html"><![CDATA[<p>简易图片API<br>只有两个7K原文件，直接上传就可以访问了<br>每天自动收录30+<br>程序自带600+图片</p><pre><code>&lt;?php//读取文本$str = explode(&quot;\n&quot;, file_get_contents(&#39;sinetxt.txt&#39;));$k = rand(0,count($str));$sina_img = str_re($str[$k]);$size_arr = array(&#39;large&#39;, &#39;mw1024&#39;, &#39;mw690&#39;, &#39;bmiddle&#39;, &#39;small&#39;, &#39;thumb180&#39;, &#39;thumbnail&#39;, &#39;square&#39;);$size = !empty($_GET[&#39;size&#39;]) ? $_GET[&#39;size&#39;] : &#39;large&#39; ;$server = rand(1,4);if(!in_array($size, $size_arr)){    $size = &#39;large&#39;;}$url = &#39;https://ws&#39;.$server.&#39;.sinaimg.cn/&#39;.$size.&#39;/&#39;.$sina_img.&#39;.jpg&#39;;//解析结果$result=array(&quot;code&quot;=&gt;&quot;200&quot;,&quot;imgurl&quot;=&gt;&quot;$url&quot;);//Type Choose参数代码$type=$_GET[&#39;return&#39;];switch ($type){   //Json格式解析case &#39;json&#39;:$imageInfo = getimagesize($url);  $result[&#39;width&#39;]=&quot;$imageInfo[0]&quot;;  $result[&#39;height&#39;]=&quot;$imageInfo[1]&quot;;  header(&#39;Content-type:text/json&#39;);echo json_encode($result);  break;//IMGdefault:header(&quot;Location:&quot;.$result[&#39;imgurl&#39;]);break;}function str_re($str){  $str = str_replace(&#39; &#39;, &quot;&quot;, $str);  $str = str_replace(&quot;\n&quot;, &quot;&quot;, $str);  $str = str_replace(&quot;\t&quot;, &quot;&quot;, $str);  $str = str_replace(&quot;\r&quot;, &quot;&quot;, $str);  return $str;}?&gt;</code></pre><p><a href="https://moec-1251970542.cos.ap-guangzhou.myqcloud.com/Websource/acgapi.zip" target="_blank" rel="noopener">文件下载</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 源码 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> websource </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>你好新博客</title>
+      <link href="/2019/03/hello-new-blog/"/>
+      <url>/2019/03/hello-new-blog/</url>
+      
+        <content type="html"><![CDATA[<h3 id="你好新博客"><a href="#你好新博客" class="headerlink" title="你好新博客"></a>你好新博客</h3><p>新博客已经完成了，介于之前的博客经常爆炸，又需要备案，又是Natfrp不稳定<br>所以咱就换了Hexo，因为我最近在玩这个新鲜玩意，又不要成本，哈哈哈，咱白嫖来的<br>所以呢，咱现在就是用的这个博客，所有域名都解析到<a href="https://www.betaloli.design">https://www.betaloli.design</a><br>新访客老访客也不用担心迷路了</p><h3 id="下面要说的话"><a href="#下面要说的话" class="headerlink" title="下面要说的话"></a>下面要说的话</h3><p>由于本人学生党，又是一只咸鱼，所以博客更新得很慢，虽然也不知道更新什么就对了<br>Hexo还没有配置完好，友情链接又不见了。所以呢咱又要开始咕咕咕了(雾)<br>还是先把友情链接给补了再说<br>还有那个关于我页面我也没有编写，等哪天从网上扒一个改改<br>就这样了<br>咕咕咕</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Centos简易安装pip3</title>
+      <link href="/2019/03/pip3/"/>
+      <url>/2019/03/pip3/</url>
+      
+        <content type="html"><![CDATA[<p>1.安装 epel-release扩展yum源</p><pre><code>yum install -y epel-releaseyum clean allyum makecache</code></pre><p>2.安装setuptools</p><pre><code>yum install -y python34-setuptools</code></pre><p>3.安装pip3</p><pre><code>easy_install-3.4 pip</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用Natfrp跳过网站备案</title>
+      <link href="/2019/03/natfrp/"/>
+      <url>/2019/03/natfrp/</url>
+      
+        <content type="html"><![CDATA[<p>在教程开始之前先了解一下什么是frp<br>Frp就是内网穿透 这个很容易理解<br>那么我也不多说，需要深入了解的同学可以百度了解一下</p><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>先进入Sakura Frp下载程序，本文是关于Linux的教程，根据自己的本台选择<br><a href="https://www.natfrp.org/" target="_blank" rel="noopener">https://www.natfrp.org/</a><br><img src="https://moec-1251970542.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2019/03/qq-750x641.png" alt="natfrp"><br>使用SSH进入服务器</p><p>先使用wget 指令进行下载 输入wget</p><pre><code>wget https://s1.tcotp.cn/cdn/SakuraFrpClient-2.3/Sakura_frpc_linux_amd64.tar.gz</code></pre><p>下载完成之后进行解压输入</p><pre><code>tar -zxvf Sakura_frpc_linux_amd64.tar.gz</code></pre><p>得到以下文件<br><img src="https://moec-1251970542.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2019/03/TIM%E6%88%AA%E5%9B%BE20190303180759.png" alt="files"></p><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>先安装组件</p><pre><code>yum install screen screen 依次运行之后再启动服务./Sakura_frpc_linux_amd64</code></pre><p>运行之后会提示输入账号密码<br>到官网注册 如不能收到邮件清先查看你的垃圾邮件，官网：<a href="https://www.natfrp.org/" target="_blank" rel="noopener">https://www.natfrp.org/</a><br>登陆之后会提示选择服务器id<br>请选择无需备案的服务器</p><h3 id="映射"><a href="#映射" class="headerlink" title="映射"></a>映射</h3><p>请到官网管理面板管理<br>管理面板→映射列表<br>如你没有需要ssl请映射80端口<br>如需ssl请映射443<br>注意：Sakura Frp和网站需要在同一服务器<br><img src="https://moec-1251970542.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2019/03/TIM%E6%88%AA%E5%9B%BE20190303181539-750x291.png" alt="nat"><br>将<strong>yourdomain.com</strong>替换成你的域名<br>完成之后需要在你的</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Natfrp </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Nginx Apche 开启HSTS</title>
+      <link href="/2019/03/openhsts/"/>
+      <url>/2019/03/openhsts/</url>
+      
+        <content type="html"><![CDATA[<p>在你的网站中启用HSTS</p><h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><p>编辑Nginx配置文件（如：/usr/local/nginx/conf/nginx.conf），如果你是使用宝塔，请在宝塔的 网站→你的网站→配置文件中配置</p><p>将代码填入Server块中<br><code>add_header Strict-Transport-Security &quot;max-age=63072000; includeSubdomains; preload&quot;;</code><br>或者使用<br><code>location ~ [^/]\.php(/|$) {    add_header Strict-Transport-Security &quot;max-age=63072000; includeSubdomains; preload&quot;;}</code><br>配置保存后重启 Nginx 服务。</p><h3 id="Apache"><a href="#Apache" class="headerlink" title="Apache"></a>Apache</h3><p>编辑你的 apache 配置文件（如 /etc/apache2/sites-enabled/website.conf 和 /etc/apache2/httpd.conf ），并加以下行到你的 HTTPS VirtualHost：</p><p>如果你用的是宝塔，请在宝塔的 网站→你的网站→配置文件中配置<br><code></code></p><p>#Apache需加载mod_header库，一般位于httpd.conf文件，搜索mod_headers并取消注释。（已加载可跳过）<br>LoadModule headers_module modules/mod_headers.so</p><p>#然后对应站点VirtualHost里面插入HSTS响应头信息<br>Header always set Strict-Transport-Security “max-age=63072000; includeSubdomains; preload”<br>现在你的 web 站点在每次访问时都会发送该请求头，失效时间是两年（秒数）。这个失效时间每次都会设置为两年后。<br><code></code></p><p>保存 Apache 配置文件，然后重启。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ssl </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux重置Mysql密码</title>
+      <link href="/2019/03/resetmysqlpasswd/"/>
+      <url>/2019/03/resetmysqlpasswd/</url>
+      
+        <content type="html"><![CDATA[<p>编辑配置文件</p><pre><code>vim /etc/mysql/mysql.conf.d/mysqld.cnf2.在配置文件[mysqld]添加字段skip-grant-tables3.重启mysqlservice mysql restart</code></pre><pre><code>4.设置密码mysql -urootuse mysql;update mysql.user set authentication_string=password(&#39;你的密码&#39;) where user=&#39;root&#39;;update mysql.user set plugin=&#39;mysql_native_password&#39;;flush privileges;5.删除配置文件添加的字段并重启mysqlservice mysql restart6.使用密码登录mysql -uroot -p</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux安装SSR小飞机</title>
+      <link href="/2019/03/linux-install-ssr/"/>
+      <url>/2019/03/linux-install-ssr/</url>
+      
+        <content type="html"><![CDATA[<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p><a href="https://github.com/cn2t/doubi-SSR" target="_blank" rel="noopener">Github</a></p><p>添加更多自定义设置，省去配置步骤，修改设置一键安装完毕。<br>脚本在centos7上测试通过，其他发行版未测试。</p><p>使用方法</p><pre><code>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh</code></pre><p>###脚本特点:<br>目前网上的各个ShadowsocksR脚本基本都是只有 安装/启动/重启 等基础功能，对于小白来说还是不够简单方便。既然是一键脚本，那么就要尽可能地简单，小白更容易接受使用！</p><ul><li>支持 限制 用户速度</li><li>支持 限制 用户设备数</li><li>支持 限制 用户总流量</li><li>支持 定时 流量清零</li><li>支持 显示 当前连接IP</li><li>支持 显示 SS/SSR连接+二维码</li><li>支持 一键安装 锐速</li><li>支持 一键安装 BBR</li><li>支持 一键封禁 垃圾邮件(SMAP)/BT/PT</li></ul><p>之前的脚本已经挂了，已经更新了新的脚本，已测试可以使用</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SSR </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>宝塔开启Tls1.3</title>
+      <link href="/2019/03/apply-tls1-3/"/>
+      <url>/2019/03/apply-tls1-3/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://moec-1251970542.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2019/03/450cc5500bf84a6c99ddc073245feb4c.png" alt="tls"><br>再开启之前确保Nginx为1.15最新版<br>在网站配置文件中插入以下两行代码</p><pre><code>ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;ssl_ciphers TLS13-AES-256-GCM-SHA384:TLS13-CHACHA20-POLY1305-SHA256:TLS13-AES-128-GCM-SHA256:TLS13-AES-128-CCM-8-SHA256:TLS13-AES-128-CCM-SHA256:EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+ECDSA+AES128:EECDH+aRSA+AES128:RSA+AES128:EECDH+ECDSA+AES256:EECDH+aRSA+AES256:RSA+AES256:EECDH+ECDSA+3DES:EECDH+aRSA+3DES:RSA+3DES:!MD5;</code></pre><p>重启nginx服务并在Myssl.com中检查是否生效<br>需要所有网站都添加才会生效</p><p>TLS 1.3包含许多安全性和性能改进，随着2015年末的HTTP / 2协议更新，以及2018年的TLS 1.3，加密连接现在比以往更加安全和快速。</p><h3 id="什么是tls1-3"><a href="#什么是tls1-3" class="headerlink" title="什么是tls1.3"></a>什么是tls1.3</h3><p>TLS代表传输层安全性，是SSL（安全套接字层）的后续产品。TLS提供Web浏览器和服务器之间的安全通信。连接本身是安全的，因为对称加密用于加密传输的数据。密钥是为每个连接唯一生成的，并且基于在会话开始时协商的共享秘密，也称为TLS handshake。</p><p>许多基于IP的协议（如HTTPS，SMTP，POP3，FTP）都支持TLS来加密数据。</p><p>Web浏览器使用SSL证书，允许它们识别它属于经过数字签名的证书颁发机构。从技术上讲，这些也称为TLS证书，但大多数SSL提供商都坚持使用术语“SSL证书”，因为这通常是众所周知的。SSL / TLS证书提供了许多人简单地知道他们在浏览器的地址栏中看到的HTTPS背后的魔力。</p><p>TLS 1.3与TLS 1.2</p><p>互联网工程任务组（IETF）是负责定义TLS协议的组，该协议经历了多次迭代。先前版本的TLS，TLS 1.2，在RFC 5246中定义， 并且在过去八年中已被大多数Web浏览器使用。在2018年3月21日，经过28次草案后，TLS 1.3已经完成。截至2018年8月，TLS 1.3的最终版本现已发布（RFC 8446）。</p><p>Cloudflare等公司已经向其客户提供TLS 1.3。 Filippo Valsorda  就TLS 1.2和TLS 1.3之间的差异进行了很好的讨论（见下文）。简而言之，TLS 1.3与TLS 1.2的主要优点是速度更快，安全性更高。</p><p>速度优势TLS 1.3</p><p>在Web性能方面，TLS和加密连接总是增加了一些开销。HTTP / 2肯定有助于解决这个问题，但TLS 1.3通过TLS错误启动和零往返时间（0-RTT）等功能帮助加速加密连接。</p><p>简单地说，使用TLS 1.2，需要两次往返才能完成TLS handshake。使用1.3时，它只需要一次往返， 从而将加密延迟减少一半。这有助于这些加密连接感觉比以前更快一点。</p><p>TLS 1.3 handshake性能</p><p>另一个优点是，从某种意义上说， 在您之前访问过的站点上，您现在可以将第一条消息的数据发送到服务器。这被称为“零往返。”（0-RTT）。是的，这也可以缩短加载时间。</p><p>使用TLS 1.3提高安全性</p><p>TLS 1.2的一个大问题是它经常没有正确配置，导致网站易受攻击。TLS 1.3现在从TLS 1.2中删除过时和不安全的功能，包括以下内</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ssl </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Centos7简易安装Mymyql</title>
+      <link href="/2019/03/mysql/"/>
+      <url>/2019/03/mysql/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://moec-1251970542.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2019/03/timg.jpg" alt="mysql"><br>在安装之前确保没有安装过Mysql<br>安装Mysql安装源</p><pre><code>rpm -Uvh http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm</code></pre><p>查看安装的源</p><pre><code>yum repolist enabled | grep &quot;mysql.*-community.*&quot;</code></pre><p>安装Mysql</p><pre><code>yum -y install mysql-community-server设置开机启动systemctl enable mysqld开启Mysql进程systemctl start mysqld重置密码mysql_secure_installation</code></pre><p>Centos可安装 将systemctl改为service即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux编译安装Nodejs</title>
+      <link href="/2019/03/install-nodejs/"/>
+      <url>/2019/03/install-nodejs/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://moec-1251970542.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2019/03/timg-1-750x459.jpg" alt="nodejs"><br>Nodejs官网有提供编译好的包，可以直接下载应用</p><p>下载源码</p><pre><code>cd /usr/local/src/wget http://nodejs.org/dist/v0.10.24/node-v0.10.24.tar.gztar zxvf node-v0.10.24.tar.gzcd node-v0.10.24`</code></pre><p>编译安装</p><pre><code>./configure --prefix=/usr/local/node/0.10.24makemake install</code></pre><p>配置环境变量</p><pre><code>vim /etc/profile//在最后一行按o插入以下代码set for nodejs export NODE_HOME=/usr/local/node/0.10.24 export PATH=$NODE_HOME/bin:$PATH</code></pre><p>按:wq保存退出 验证安装</p><pre><code>node -v</code></pre><p>是否有版本输出<br>Npm模块安装路径</p><pre><code>/usr/local/node/0.10.24/lib/node_modules/</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> nodejs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>npm安装n管理器切换版本</title>
+      <link href="/2019/03/install-n/"/>
+      <url>/2019/03/install-n/</url>
+      
+        <content type="html"><![CDATA[<h3 id="什么是NVM"><a href="#什么是NVM" class="headerlink" title="什么是NVM"></a>什么是NVM</h3><p>nvm全称Node Version Manager是 Nodejs 版本管理器，它让我们能方便的对 Nodejs 的版 本进行切换。 nvm 的官方版本只支持 Linux 和 Mac。 Windows 用户，可以用 nvm-windows。</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>使用npm安装nvm模块</p><pre><code>npm  install  -g  n</code></pre><p>切换版本</p><pre><code>n 6.6.0</code></pre><p>安装其他版本直接执行n+版本号</p><p>例如n 4.1.0</p><p>其他指令</p><pre><code>n latest       //安装最新版本n stable      //安装稳定版本n rm x.x.x   //删除某个版本</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> nodejs </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>宝塔安装SSpanelv3</title>
+      <link href="/2019/03/sspanel/"/>
+      <url>/2019/03/sspanel/</url>
+      
+        <content type="html"><![CDATA[<h3 id="安装面板程序"><a href="#安装面板程序" class="headerlink" title="安装面板程序"></a>安装面板程序</h3><p>配置PHP（宝塔用户）</p><p>宝塔用户可能会在超过某一数量节点的时候出现Undefined offset :0 in 你的网站路径这个错误，这个问题会导致后端无法进行连接，可以按照以下方法解决</p><p>在宝塔面板中找到PHP，点击设置</p><p>在禁用函数一栏找到</p><ul><li>system</li><li>proc_open</li><li>proc_get_status<br>去除它</li></ul><p>在性能调整中，把PHP运行模式设置为静态</p><p>在配置修改中按Ctrl + F搜索display_errors =改为关闭后保存</p><p>网络环境配置好后</p><p>cd /你的网站目录  例：cd /www/wwwroot/你的网站目录  </p><pre><code>yum updateyum install git -ygit clone -b master https://github.com/Anankke/ss-panel-v3-mod_Uim.git tmp &amp;&amp; mv tmp/.git . &amp;&amp; rm -rf tmp &amp;&amp; git reset --hardchown -R root:root *chmod -R 755 *chown -R www:www storagephp composer.phar install</code></pre><p>移除防跨目录移除工具（LNMP用户）</p><p>该工具可以快速的移除防跨目录的限制</p><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> lnmp1.4/tools <span class="token operator">&amp;&amp;</span> ./remove_open_basedir_restriction.sh</code></pre><p>开启SCANDIR（）函数（LNMP用户）</p><pre class=" language-bash"><code class="language-bash"><span class="token function">sed</span> -i <span class="token string">'s/,scandir//g'</span> /usr/local/php/etc/php.ini</code></pre><h4 id="示例Nginx配置"><a href="#示例Nginx配置" class="headerlink" title="示例Nginx配置"></a>示例Nginx配置</h4><p> <code>location / {    try_files $uri /index.php$is_args$args;}</code> </p><h4 id="Apache重写配置示例"><a href="#Apache重写配置示例" class="headerlink" title="Apache重写配置示例"></a>Apache重写配置示例</h4><p>确保您.htaccess和index.php文件位于同一个公共可访问目录中。该.htaccess文件应包含以下代码：</p><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>IfModule mod_rewrite.c<span class="token operator">></span>RewriteEngine OnRewriteCond %<span class="token punctuation">{</span>REQUEST_FILENAME<span class="token punctuation">}</span> <span class="token operator">!</span>-fRewriteCond %<span class="token punctuation">{</span>REQUEST_FILENAME<span class="token punctuation">}</span> <span class="token operator">!</span>-dRewriteRule ^ index.php <span class="token punctuation">[</span>QSA,L<span class="token punctuation">]</span><span class="token operator">&lt;</span>/IfModule<span class="token operator">></span></code></pre><p>确保启用Apache的mod_rewrite模块，并使用AllowOverride选项配置虚拟主机，以便.htaccess可以使用重写规则：</p><pre class=" language-bash"><code class="language-bash">AllowOverride All</code></pre><h4 id="示例IIS重写配置"><a href="#示例IIS重写配置" class="headerlink" title="示例IIS重写配置"></a>示例IIS重写配置</h4><p>确保Web.config和index.php文件位于同一个公共可访问目录中。该Web.config文件应包含以下代码：</p><pre class=" language-bash"><code class="language-bash"><span class="token operator">&lt;</span>?xml version<span class="token operator">=</span><span class="token string">"1.0"</span> encoding<span class="token operator">=</span><span class="token string">"UTF-8"</span>?<span class="token operator">></span><span class="token operator">&lt;</span>configuration<span class="token operator">></span>    <span class="token operator">&lt;</span>system.webServer<span class="token operator">></span>        <span class="token operator">&lt;</span>rewrite<span class="token operator">></span>            <span class="token operator">&lt;</span>rules<span class="token operator">></span>                <span class="token operator">&lt;</span>rule name<span class="token operator">=</span><span class="token string">"slim"</span> patternSyntax<span class="token operator">=</span><span class="token string">"Wildcard"</span><span class="token operator">></span>                    <span class="token operator">&lt;</span>match url<span class="token operator">=</span><span class="token string">"*"</span> /<span class="token operator">></span>                    <span class="token operator">&lt;</span>conditions<span class="token operator">></span>                        <span class="token operator">&lt;</span>add input<span class="token operator">=</span><span class="token string">"{REQUEST_FILENAME}"</span> matchType<span class="token operator">=</span><span class="token string">"IsFile"</span> negate<span class="token operator">=</span><span class="token string">"true"</span> /<span class="token operator">></span>                        <span class="token operator">&lt;</span>add input<span class="token operator">=</span><span class="token string">"{REQUEST_FILENAME}"</span> matchType<span class="token operator">=</span><span class="token string">"IsDirectory"</span> negate<span class="token operator">=</span><span class="token string">"true"</span> /<span class="token operator">></span>                    <span class="token operator">&lt;</span>/conditions<span class="token operator">></span>                    <span class="token operator">&lt;</span>action type<span class="token operator">=</span><span class="token string">"Rewrite"</span> url<span class="token operator">=</span><span class="token string">"index.php"</span> /<span class="token operator">></span>                <span class="token operator">&lt;</span>/rule<span class="token operator">></span>            <span class="token operator">&lt;</span>/rules<span class="token operator">></span>        <span class="token operator">&lt;</span>/rewrite<span class="token operator">></span>    <span class="token operator">&lt;</span>/system.webServer<span class="token operator">></span><span class="token operator">&lt;</span>/configuration<span class="token operator">></span></code></pre><h4 id="修改网站目"><a href="#修改网站目" class="headerlink" title="修改网站目"></a>修改网站目</h4><p> /你的网站目录/public;<br>配置数据库</p><h4 id="登陆数据库"><a href="#登陆数据库" class="headerlink" title="登陆数据库"></a>登陆数据库</h4><pre class=" language-bash"><code class="language-bash">mysql -u root -p                           // 这里需要输入密码mysql<span class="token operator">></span>CREATE DATABASE database_name<span class="token punctuation">;</span>       // 新建数据库mysql<span class="token operator">></span>use database_name<span class="token punctuation">;</span>                   // 选择数据库mysql<span class="token operator">></span>source /网站目录/sql/glzjin_all.sql<span class="token punctuation">;</span>  // 导入.sql文件</code></pre><h4 id="配置sspanel"><a href="#配置sspanel" class="headerlink" title="配置sspanel"></a>配置sspanel</h4><pre class=" language-bash"><code class="language-bash"><span class="token function">cd</span> /网站目录<span class="token function">cp</span> config/.config.php.example config/.config.php<span class="token function">vi</span> config/.config.phplnmp restart</code></pre><p>#####创建管理员并同步用户#####</p><pre class=" language-bash"><code class="language-bash">php xcat createAdmin          //创建管理员php xcat syncusers            //同步用户php xcat initQQWry            //下载IP解析库php xcat resetTraffic         //重置流量php xcat initdownload         //下载ssr程式</code></pre><h5 id="设置定时任务"><a href="#设置定时任务" class="headerlink" title="设置定时任务"></a>设置定时任务</h5><p>执行crontab -e命令，添加以下四条</p><pre class=" language-bash"><code class="language-bash">30 22 * * * php /网站目录/xcat sendDiaryMail0 0 * * * php -n /网站目录/xcat dailyjob*/1 * * * * php /网站目录/xcat checkjob*/1 * * * * php /网站目录/xcat syncnode</code></pre><p>如果需要自动备份，可模仿以下两例，自行添加一条</p><p>例1：每20分钟备份1次（若间隔大于60分钟，看例2）：<br><em>/20 </em> <em> </em> * php -n /网站目录/xcat backup</p><p>例2：每20小时备份1次（若间隔大于24小时，自行Google）：<br>0 <em>/20 </em> <em> </em> php -n /网站目录/xcat backup<br>如果需要财务报表，可选添加以下三条</p><pre class=" language-bash"><code class="language-bash">5 0 * * * php /网站目录/xcat sendFinanceMail_day6 0 * * 0 php /网站目录/xcat sendFinanceMail_week7 0 1 * * php /网站目录/xcat sendFinanceMail_month如果需要检测被墙，添加以下一条*/1 * * * * php /网站目录/xcat detectGFW如果要用到半径，需要添加下面这三条*/1 * * * * php /网站目录/xcat synclogin*/1 * * * * php /网站目录/xcat syncvpn*/1 * * * * php -n /网站目录/xcat syncnas如果需要进行前端开发，还需安装的NodeJS</code></pre><p>教程：https：//github.com/nodesource/distributions/blob/master/README.md</p><p>安装的NodeJS可以后才使用php xcat npmbuild进行构建</p><p>项目地址:<a href="https://github.com/Anankke/ss-panel-v3-mod_Uim" target="_blank" rel="noopener">Github</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sspanel </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用Github page安装Hexo博客</title>
+      <link href="/2019/03/github-page/"/>
+      <url>/2019/03/github-page/</url>
+      
+        <content type="html"><![CDATA[<h2 id="创建Github仓库"><a href="#创建Github仓库" class="headerlink" title="创建Github仓库"></a>创建Github仓库</h2><p>这个不用说，自己百度。创建之后点击Setting 设置 仓库名字填写你的 用户名.github.io</p><p>我的名字是Qiansh 所以是Qiansh.github.io</p><h2 id="安装环境"><a href="#安装环境" class="headerlink" title="安装环境"></a>安装环境</h2><p>百度Nodejs,git  安装两个环境之后执行安装Hexo命令</p><pre><code>npm install hexo-cli -g</code></pre><p>安装之后初始化</p><pre><code>Hexo init  &lt;yourblogname&gt;cd &lt;yourblogname&gt;npm install</code></pre><h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><pre><code>hexo g //生成静态文件hexo s //启动服务</code></pre><h2 id="连接Github"><a href="#连接Github" class="headerlink" title="连接Github"></a>连接Github</h2><pre><code>git config --global user.name &quot;yourname&quot;git config --global user.email &quot;youremail&quot;</code></pre><p>创建SSH Key</p><p>cd ~/.ssh  //检查你的.SSH文件夹</p><p>输入ls查看是否存在</p><pre><code>ssh-keygen -t rsa -C &quot;youremail&quot;  //创建key</code></pre><p>按三次回车确定生成</p><pre><code>eval &quot;$(ssh-agent -s)&quot;  //添加秘钥到ssh-agentssh-add ~/.ssh/id_rsa  //添加创建的秘钥到ssh-agent</code></pre><p>添加SSHkey到Github</p><p>到个人仓库那里点击Setting下的Deploy key</p><p>按New ssh key新增一个SSHkey</p><p>将生成的.pub文件里的内容复制进去</p><p>然后把框打钩，允许读写</p><h2 id="检测"><a href="#检测" class="headerlink" title="检测"></a>检测</h2><pre><code>ssh -T git@github.com  //查询连接是否成功</code></pre><p>如果出现你的用户名以及密码则成功</p><h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>安装插件</p><pre><code>npm install hexo-deployer-git --save</code></pre><p>在Hexo根目录下的_config.yml中最后底部<br>Deploy块下添加以下代码</p><pre><code>deploy:type: gitrepo: git@github.com:yourname/yourname.github.io.gitbranch: master</code></pre><p>保存退出</p><pre><code>输入 hexo g 生成文件输入 hexo d  部署</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>这是第一篇博文</title>
+      <link href="/2019/03/hexo/"/>
+      <url>/2019/03/hexo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本Hexo博客已经基本完成，剩下只需要再进行小修改即可<br>这只是个预备的博客，如果我的主站(<a href="https://www.ucog.cn)爆炸了的话" target="_blank" rel="noopener">https://www.ucog.cn)爆炸了的话</a><br>我会启用这个博客，我也不知道我的主站什么时候炸<br>由于本人过于菜鸡，所以本博客可能会出现404空白页，这都是<br>Hexo在生成主题时的错误</p><h2 id="GG"><a href="#GG" class="headerlink" title="GG"></a>GG</h2><p>咕？咕咕</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
